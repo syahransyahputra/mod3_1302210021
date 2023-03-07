@@ -77,6 +77,8 @@ namespace modul3_1302210021
             label1.Text = num.ToString();
         }
 
+
+
         private void button13_Click(object sender, EventArgs e)
         {
             kali = int.Parse(label1.Text);
@@ -86,18 +88,21 @@ namespace modul3_1302210021
         private void button10_Click(object sender, EventArgs e)
         {
             plus = int.Parse(label1.Text);
-            hasil = plus + samadengan;
             label1.Text = "";
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             samadengan = int.Parse(label1.Text);
-
-            //hasil = plus * samadengan;
+            hasil = plus + samadengan;
             label1.Text = hasil.ToString();
         }
-
+        private void button14_Click(object sender, EventArgs e)
+        {
+            samadengan = int.Parse(label1.Text);
+            hasil = kali * samadengan;
+            label1.Text = hasil.ToString();
+        }
 
     }
 }
